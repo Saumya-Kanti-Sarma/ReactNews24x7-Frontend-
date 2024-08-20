@@ -1,0 +1,225 @@
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  background-color: #7c7b7b56;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 20px;
+  padding-top: 20px;
+  height: 75vh;
+  width: 75vw;
+  margin-top: 75px;
+  border-radius: 20px;
+}
+
+.register-heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #000000;
+  padding: 10px 20px;
+}
+
+/* Register form and google area */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: calc(100% - 40px);
+  background-color: #ffffff6e;
+}
+
+.register-form input {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+
+.password-area {
+  display: flex;
+}
+
+.password-area input {
+  border-radius: 10px 0 0 10px;
+  width: 61%;
+  margin-left: 7%;
+}
+
+.show-pas {
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.show-pas:hover {
+  opacity: 0.8;
+}
+
+.register-submit-btn {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  padding: 10px 45px;
+  border-radius: 10px;
+}
+
+.google-area {
+  background-color: none;
+  margin-top: 10px;
+  height: calc(100% - 300px);
+}
+
+.login-area,
+.login-link {
+  display: flex;
+  justify-content: center;
+  background-color: none;
+  box-shadow: none;
+  margin-top: 10px;
+}
+
+.login-area {
+  height: calc(100% - 60px);
+  background-color: #ffffffdc;
+  border-radius: 20px;
+}
+
+.login-link {
+  margin: 0;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #01327a;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  opacity: 0.8;
+  text-shadow: 0 0 3px #7a010171;
+  color: #7a0101;
+}
+
+
+.loader-animation {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #514b82;
+  animation:
+    l20-1 0.8s infinite linear alternate,
+    l20-2 1.6s infinite linear;
+}
+
+@keyframes l20-1 {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%)
+  }
+
+  12.5% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%)
+  }
+
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100%)
+  }
+
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+  }
+
+  62.5% {
+    clip-path: polygon(50% 50%, 100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%)
+  }
+
+  75% {
+    clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100%)
+  }
+
+  100% {
+    clip-path: polygon(50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100%)
+  }
+}
+
+@keyframes l20-2 {
+  0% {
+    transform: scaleY(1) rotate(0deg)
+  }
+
+  49.99% {
+    transform: scaleY(1) rotate(135deg)
+  }
+
+  50% {
+    transform: scaleY(-1) rotate(0deg)
+  }
+
+  100% {
+    transform: scaleY(-1) rotate(-135deg)
+  }
+}
+
+@media (max-width: 700px) {
+  .heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .register-heading {
+    font-size: 1.4rem;
+  }
+
+
+}
+
+@media (max-width: 520px) {
+  .password-area input {
+    flex-grow: 1;
+    margin: 0;
+    width: 100%;
+  }
+
+  .password-area button {
+    font-size: 1rem;
+  }
+
+  .register-form input {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .login-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .register-submit-btn {
+    font-size: 1rem;
+  }
+}

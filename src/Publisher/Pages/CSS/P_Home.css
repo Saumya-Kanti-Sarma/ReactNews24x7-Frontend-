@@ -1,0 +1,169 @@
+.qwiu {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  width: 100vw;
+  height: 10vh;
+}
+
+.qwiu-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+#main-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+}
+
+#main-area aside {
+  display: flex;
+  flex: 1;
+  background-color: #8581811a;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+#main-area main {
+  display: flex;
+  flex: 4;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  margin-top: 30px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+li button {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  border: none;
+  background-color: transparent;
+}
+
+li button:hover {
+  color: #d31b1b;
+  text-decoration: none;
+  text-shadow: 0 0 2px #ff0303;
+  background-color: #0000001c;
+}
+
+.active-link {
+  color: #d31b1b;
+  text-decoration: none;
+  text-shadow: 0 0 1.4px #ff0303;
+  background-color: #0000001c;
+}
+
+main div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+main div div {
+  min-width: 100%;
+  transition: all 0.15s ease-in-out;
+}
+
+main div div:nth-child(1) {
+  background-color: #d31b1b;
+}
+
+main div div:nth-child(2) {
+  background-color: #2196F3;
+}
+
+main div div:nth-child(3) {
+  background-color: #4CAF50;
+}
+
+main div div:nth-child(4) {
+  background-color: #FFC107;
+}
+
+.menu {
+  display: none;
+}
+
+.parent-div {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .qwiu-heading {
+    font-size: 2rem;
+  }
+
+  .qwiu {
+    height: 5vh;
+  }
+
+  #main-area {
+    height: 95vh;
+  }
+
+  ul li button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .qwiu {
+    justify-content: space-between;
+    padding: 2px;
+    cursor: pointer;
+  }
+
+  .qwiu-heading {
+    margin-right: 80px;
+  }
+
+  #main-area aside {
+    position: absolute;
+    background-color: #ffffff;
+    width: 30%;
+    height: 94vh;
+    z-index: 100;
+    top: 5.4vh;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.15s ease-in-out;
+    box-shadow: 0 0 12px #000000e5;
+  }
+
+  .menu {
+    display: block;
+  }
+
+}
