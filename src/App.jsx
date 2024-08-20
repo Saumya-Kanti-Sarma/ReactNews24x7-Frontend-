@@ -10,36 +10,36 @@ const App = () => {
   const Allroute = createBrowserRouter([
     // <<<<<<<<<<<<<<<<<<<<All Publishers Routes>>>>>>>>>>>>>>>>>>>>>>>>
     {
-      path: "/publisher/register",
+      path: "/ReactNews24x7-Frontend-/publisher/register",
       element: <P_RegLog />
     },
     {
-      path: "/publisher/login",
+      path: "/ReactNews24x7-Frontend-/publisher/login",
       element: <P_RegLog />
     },
     {
-      path: "/publisher",
+      path: "/ReactNews24x7-Frontend-/publisher",
       element: <P_Home />
     },
     {
-      path: "/publisher/addnews",
+      path: "/ReactNews24x7-Frontend-/publisher/addnews",
       element: <P_AddNews />
     },
     {
-      path: "/publisher/publishes",
+      path: "/ReactNews24x7-Frontend-/publisher/publishes",
       element: <P_AllNews />
     },
     {
-      path: "/publisher/logout",
+      path: "/ReactNews24x7-Frontend-/publisher/logout",
       element: <P_Logout />
     },
     {
-      path: "/publisher/feed",
+      path: "/ReactNews24x7-Frontend-/publisher/feed",
       element: <P_Feed />
     },
     // <<<<<<<<<<<<<<<<<<<<All Customer Routes>>>>>>>>>>>>>>>>>>>>>>>>
     {
-      path: "/",
+      path: "/ReactNews24x7-Frontend-/",
       element: "Home page"
     },
     {
